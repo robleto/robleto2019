@@ -161,8 +161,8 @@ main {
 
   blockquote {
       @media (min-width: 600px) {
-        grid-column-start: first;
-        grid-column-end: end;
+        grid-column-start: 1;
+        grid-column-end: -1;
       }
   }
 
@@ -172,8 +172,8 @@ main {
     }
     &.fullwidth {
         @media (min-width: 600px) {
-          grid-column-start: first;
-          grid-column-end: end;
+          grid-column-start: 1;
+          grid-column-end: -1;
         }
     }
   }

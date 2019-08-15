@@ -203,15 +203,15 @@ main {
       grid-gap: 3rem; } }
   @media (min-width: 600px) {
     main blockquote {
-      grid-column-start: first;
-      grid-column-end: end; } }
+      grid-column-start: 1;
+      grid-column-end: -1; } }
   @media (min-width: 600px) {
     main figure {
       grid-column-end: span 2; } }
   @media (min-width: 600px) {
     main figure.fullwidth {
-      grid-column-start: first;
-      grid-column-end: end; } }
+      grid-column-start: 1;
+      grid-column-end: -1; } }
   @media (min-width: 600px) {
     main section {
       grid-column-end: span 2; } }
