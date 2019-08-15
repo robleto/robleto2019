@@ -72,10 +72,14 @@ blockquote {
   font-weight: 200;
   font-style: normal;
   border: none;
-  font-size: 150%;
+  font-size: 130%;
   line-height: 1.45;
   text-align: center;
-  padding: 5rem 5rem 3rem;
+  padding: 3rem 1rem 1rem;
+  @media (min-width: 600px) {
+    padding: 5rem 5rem 3rem;
+    font-size: 150%;
+  }
 }
 
 h2 {
