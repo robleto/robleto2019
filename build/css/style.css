@@ -223,8 +223,8 @@ main {
       grid-row-end: span 2; } }
   @media (min-width: 600px) {
     main hr {
-      grid-column-start: first;
-      grid-column-end: end; } }
+      grid-column-start: 1;
+      grid-column-end: -1; } }
   @media (min-width: 1300px) {
     main section.bio-details {
       grid-column-end: span 2; } }
