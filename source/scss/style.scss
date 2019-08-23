@@ -102,8 +102,6 @@ a {
   cursor: pointer;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border: 0;
   border-top: 4px dotted #e3e3e3;
   width: 100%;
@@ -160,7 +158,7 @@ main {
   @media (min-width: 886px) {
       grid-template-columns: [first] repeat(auto-fill, minmax(175px, 1fr)) [end];
   }
-  @media (min-width: 1074px) {
+  @media (min-width: 1090px) {
       padding: 8rem 15rem;
       grid-gap: 3rem;
   }
@@ -195,11 +193,6 @@ main {
           grid-column-end: span 3;
       }
   }
-  h2 {
-      @media (min-width: 696px) {
-          grid-row-end: span 2;
-      }
-  }
   hr {
     @media (min-width: 696px) {
       grid-column-start: 1;
@@ -218,6 +211,9 @@ main {
     @media (min-width: 696px) {
         grid-row-end: span 3;
       }
+      @media (min-width: 886px) {
+          grid-row-end: span 2;
+      }
   }
   .skill {
     @media (min-width: 696px) {
@@ -226,7 +222,7 @@ main {
     @media (min-width: 886px) {
         grid-column-end: span 1;
     }
-    @media (min-width: 1074px) {
+    @media (min-width: 1090px) {
       grid-column-end: span 1;
     }
   }
