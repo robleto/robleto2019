@@ -151,13 +151,16 @@ main {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: 1fr;
-  @media (min-width: 600px) {
-    grid-template-columns: [first] repeat(auto-fill, minmax(175px, 1fr)) [end];
+  @media (min-width: 696px) {
+    grid-template-columns: [first] repeat(auto-fill, minmax(80px, 1fr)) [end];
     grid-auto-rows: minmax(20px, auto);
     padding: 4rem 7rem;
     grid-gap: 1.5rem;
   }
-  @media (min-width: 1300px) {
+  @media (min-width: 886px) {
+      grid-template-columns: [first] repeat(auto-fill, minmax(175px, 1fr)) [end];
+  }
+  @media (min-width: 1074px) {
       padding: 8rem 15rem;
       grid-gap: 3rem;
   }
@@ -172,8 +175,11 @@ main {
 
   figure {
     @media (min-width: 600px) {
-        grid-column-end: span 2;
+        grid-column-end: span 3;
     }
+      @media (min-width: 886px) {
+          grid-column-end: span 2;
+      }
     &.fullwidth {
         @media (min-width: 600px) {
           grid-column-start: 1;

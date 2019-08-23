@@ -130,7 +130,7 @@ blockquote {
   font-size: 130%;
   line-height: 1.45;
   text-align: center;
-  padding: 3rem 1rem 2rem; }
+  padding: 3rem 1rem 1rem; }
   @media (min-width: 600px) {
     blockquote {
       padding: 5rem 5rem 3rem;
@@ -195,13 +195,16 @@ main {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: 1fr; }
-  @media (min-width: 600px) {
+  @media (min-width: 696px) {
     main {
-      grid-template-columns: [first] repeat(auto-fill, minmax(175px, 1fr)) [end];
+      grid-template-columns: [first] repeat(auto-fill, minmax(80px, 1fr)) [end];
       grid-auto-rows: minmax(20px, auto);
       padding: 4rem 7rem;
       grid-gap: 1.5rem; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 886px) {
+    main {
+      grid-template-columns: [first] repeat(auto-fill, minmax(175px, 1fr)) [end]; } }
+  @media (min-width: 1074px) {
     main {
       padding: 8rem 15rem;
       grid-gap: 3rem; } }
@@ -210,6 +213,9 @@ main {
       grid-column-start: 1;
       grid-column-end: -1; } }
   @media (min-width: 600px) {
+    main figure {
+      grid-column-end: span 3; } }
+  @media (min-width: 886px) {
     main figure {
       grid-column-end: span 2; } }
   @media (min-width: 600px) {
