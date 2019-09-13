@@ -42,6 +42,14 @@
 		"oAP": "/build/about.html",
 		"oF": 1
 		},
+	"/source/compass.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/compass.html",
+		"oF": 0
+		},
 	"/source/img/beststocks.png": {
 		"ft": 32768,
 		"iS": 13151273,
