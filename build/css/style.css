@@ -118,6 +118,23 @@ nav {
     justify-self: center; }
     nav .center img {
       width: 55px; }
+  nav .company-logo {
+    align-self: flex-start;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+    nav .company-logo .plus {
+      font-family: bebas-neue, sans-serif;
+      font-size: 300%;
+      text-align: center;
+      opacity: 0.5;
+      font-weight: 300;
+      margin: 0;
+      padding: 2rem 0 0 0; }
+    nav .company-logo img {
+      max-width: 300px; }
 
 /*----------------------------------------
 Typography
@@ -331,3 +348,130 @@ section.bio-details h3 {
   padding-left: 0.25rem;
   border-left: solid 1px #efefef;
   display: inline-block; }
+
+main.company {
+  padding-top: 1rem; }
+  main.company .case-study {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.5fr; }
+    @media (min-width: 768px) {
+      main.company .case-study {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr; } }
+  main.company img {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: span 2; }
+    @media (min-width: 768px) {
+      main.company img {
+        grid-column-end: -1;
+        grid-row-end: span -1; } }
+  main.company .copy {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    color: #ccc;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: span -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    grid-template-areas: "headline headline" "subhead subhead" "description description" "contributions goal"; }
+    @media (min-width: 768px) {
+      main.company .copy {
+        grid-column-start: 2;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: span -1; } }
+  main.company h2 {
+    grid-area: headline;
+    font-size: 220%;
+    color: #efefef;
+    padding: 0;
+    margin-bottom: 0;
+    align-self: end; }
+  main.company h3 {
+    grid-area: subhead;
+    font-family: acumin-pro, sans-serif;
+    color: #ddd;
+    padding: 0;
+    margin: 0;
+    align-self: start; }
+  main.company .description {
+    grid-area: description; }
+    main.company .description p {
+      font-size: 95%;
+      line-height: 1.3; }
+    main.company .description .btn {
+      display: inline-block;
+      border: solid 1px #ddd;
+      background-color: #efefef;
+      color: #000;
+      margin-top: 1.5rem;
+      font-family: bebas-neue, sans-serif;
+      font-size: 130%; }
+  main.company .contributions {
+    grid-area: contributions; }
+  main.company .goal {
+    grid-area: goal; }
+  main.company .contributions h4, main.company .goal h4 {
+    font-family: bebas-neue, sans-serif;
+    font-size: 120%;
+    color: #ddd;
+    padding: 0;
+    margin-bottom: .75rem; }
+  main.company .contributions p, main.company .goal p {
+    font-size: 95%;
+    line-height: 1.3; }
+  main.company .contributions ul, main.company .contributions li, main.company .goal ul, main.company .goal li {
+    font-size: 95%;
+    line-height: 1.75; }
+
+footer {
+  max-width: 1180px; }
+  footer .more-about-me {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-gaps: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "bioleft" "biocenter" "bioright"; }
+    @media (min-width: 768px) {
+      footer .more-about-me {
+        grid-template-columns: 5fr auto 5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "bioleft biocenter bioright"; } }
+  footer .resume {
+    grid-area: bioleft;
+    justify-self: center;
+    text-align: center;
+    align-self: center; }
+    @media (min-width: 768px) {
+      footer .resume {
+        justify-self: start;
+        text-align: left;
+        align-self: center; } }
+  footer .me {
+    grid-area: biocenter;
+    justify-self: center;
+    text-align: center;
+    align-self: center; }
+    footer .me img {
+      max-width: 120px;
+      border-radius: 90%;
+      display: inline-block; }
+  footer .contact {
+    grid-area: bioright;
+    justify-self: center;
+    text-align: center;
+    align-self: center; }
+    @media (min-width: 768px) {
+      footer .contact {
+        justify-self: end;
+        text-align: right;
+        align-self: center; } }
