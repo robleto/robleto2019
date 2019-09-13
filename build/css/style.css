@@ -370,7 +370,7 @@ main.company {
         grid-column-end: -1;
         grid-row-end: span -1; } }
   main.company .copy {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(25, 25, 25, 0.9);
     padding: 2rem;
     color: #ccc;
     grid-column-start: 1;
@@ -462,7 +462,7 @@ footer {
     text-align: center;
     align-self: center; }
     footer .me img {
-      max-width: 120px;
+      max-width: 90px;
       border-radius: 90%;
       display: inline-block; }
   footer .contact {

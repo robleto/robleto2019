@@ -42,20 +42,23 @@
 		"oAP": "/build/about.html",
 		"oF": 1
 		},
-	"/source/compass.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/compass.html",
-		"oF": 0
-		},
 	"/source/img/beststocks.png": {
 		"ft": 32768,
 		"iS": 13151273,
 		"oA": 0,
 		"oAP": "/build/img/beststocks.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/img/company-page.png": {
+		"ft": 32768,
+		"iS": 451240,
+		"oA": 0,
+		"oAP": "/build/img/company-page.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
