@@ -1,0 +1,5 @@
+infotron_pixel_1("");if (typeof(window.top.dataLayerPushed) === "undefined") {
+    window.top.dataLayerPushed = true;
+    
+}
+
